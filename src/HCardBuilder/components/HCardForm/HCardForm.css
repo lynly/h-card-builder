@@ -1,0 +1,30 @@
+.heading {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #2c3e50;
+  font-size: 29pt;
+  margin-top: 0px;
+  font-weight: 800; 
+}
+
+.form-section {
+  margin-bottom: 32px;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 12px;
+}
+
+.col {
+  flex-grow: 1;
+}
+
+@media all and (max-width: 992px) {
+  .col {
+    margin-bottom: 12px;
+  }
+  .row {
+    margin-bottom: 0px;
+  }
+}
