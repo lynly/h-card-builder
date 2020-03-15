@@ -1,3 +1,17 @@
+# TODO
+* add test 
+* style input type="file" for Upload Avatar, (note: think about accessibility)
+* refactor FormButton for Upload Avatar? 
+* get Upload Avatar working 
+* fix styling 
+* rejig file folders, ie. HCardPreview, imports a file that is nested ../HCardForm/FormSubHeading/FormSubHeading
+* add constants for color, font-size, spacing
+* use a library for rows and columns or extract it to it's own components 
+
+
+
+# Create React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +80,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
