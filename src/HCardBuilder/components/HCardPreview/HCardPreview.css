@@ -1,0 +1,21 @@
+.preview-dark-grey {
+    background: #2c3e50;
+    padding: 56px 24px 24px 24px;
+}
+
+.preview-white {
+    background: white;
+    padding: 32px 24px 24px 24px;
+}
+
+.preview-name {
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 16pt;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.preview-align-center {
+    align-items: center;
+}
