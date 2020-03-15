@@ -1,0 +1,37 @@
+.builder-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.builder-col {
+  flex-grow: 1;
+  width: 50%;
+  padding: 40px;
+}
+
+.order-preview {
+  background:  #e1e4e7;
+}
+
+@media all and (max-width: 768px) {
+  .builder-col {
+    flex-grow: 1;
+    width: 100%;
+  } 
+  .order-form {
+    order: 2;
+  }
+  .order-preview {
+    order: 1;
+  }
+}
+
+.heading-preview {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #b0b8bc;
+  text-transform: uppercase;
+  font-size: 16pt;
+  font-weight: 400;
+  margin-bottom: 12px;
+  text-align: end;
+}
