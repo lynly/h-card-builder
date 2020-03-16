@@ -1,9 +1,9 @@
 # TODO
 * add test 
 * style input type="file" for Upload Avatar, (note: think about accessibility)
-* refactor FormButton for Upload Avatar? 
-* get Upload Avatar working 
-* fix styling 
+* refactor FormButton for Upload Avatar label? 
+* add button focus & hover states
+* fix styling
 * rejig file folders, ie. HCardPreview, imports a file that is nested ../HCardForm/FormSubHeading/FormSubHeading
 * add constants for color, font-size, spacing
 * use a library for rows and columns or extract it to it's own components 
