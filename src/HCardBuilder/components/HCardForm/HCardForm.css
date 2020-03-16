@@ -28,3 +28,26 @@
     margin-bottom: 0px;
   }
 }
+
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+.input-file-button {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 20pt;
+  font-weight: 400;
+  padding: 12px;
+  border-radius: 4px;
+  color: white;
+  background-color: #627b8b;
+  width: 100%;
+  display: flex;
+  position: relative;
+  top: -16px;
+  justify-content: center;
+}
+
+/* TODO: input-file-button focus & hover states */

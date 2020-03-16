@@ -1,9 +1,9 @@
 import React from 'react';
 import './FormButton.css';
 
-const FormButton = ({ text }) => {
+const FormButton = ({ text, type, color = 'blue' }) => {
   return (
-    <input className="form-button blue" type="submit" value={text} />
+    <input className={`form-button ${color}`} type={type} value={text} />
   );
 }
 

@@ -4,7 +4,7 @@ import FormSubHeading from './FormSubHeading/FormSubHeading'
 import FormTextfield from './FormTextfield/FormTextfield'
 import FormButton from './FormButton/FormButton'
 
-const HCardForm = ({ values, handleInputChange }) => {
+const HCardForm = ({ values, handleInputChange, handleAvatarChange }) => {
 
   return (
     <form>
@@ -58,7 +58,8 @@ const HCardForm = ({ values, handleInputChange }) => {
       <div className="form-section">
         <div className="row">
           <div className="col">
-            <input type="file" id='upload-avatar' name='upload-avatar' />
+            <input type="file" id='file' name='file' onChange={handleAvatarChange} />
+            <label for="file" className="input-file-button">Upload Avatar</label>
           </div>
           <div className="col">
             <FormButton type="submit" text="Create hCard" />
