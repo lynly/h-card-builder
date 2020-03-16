@@ -1,14 +1,25 @@
 import React from 'react';
 import './HCardPreview.css';
 import FormSubHeading from '../HCardForm/FormSubHeading/FormSubHeading'
+import PreviewAvatar from './PreviewAvatar/PreviewAvatar'
 
 
-const HCardPreview = ({ values }) => {
+const HCardPreview = ({ values, avatar }) => {
   return (
     <>
       <div className="preview-dark-grey">
-        {/* Added Name: for UX, thought it was confusing showing an empty grey box  */}
-        <p className="preview-name">Name: {values.givenName} {values.surname}</p>
+        <div className="row">
+          <div className="form-sub-col-6">
+            {/* Added Name: for UX, thought it was confusing showing an empty grey box  */}
+            <p className="preview-name">Name: {values.givenName} {values.surname}</p>
+          </div>
+          <div className="preview-img">
+            {avatar.file ?
+              <img src={avatar.file} />
+              : <PreviewAvatar />
+            }
+          </div>
+        </div>
       </div>
       <div className="preview-white">
         <FormSubHeading heading="Email" value={values.email} />
