@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
+import { useDropzone } from 'react-dropzone'
 import './HCardBuilder.css';
 import HCardForm from './components/HCardForm/HCardForm'
 import HCardPreview from './components/HCardPreview/HCardPreview'
@@ -11,11 +12,20 @@ const HCardBuilder = () => {
       [name]: value,
     })
   }
+
   const handleAvatarChange = e => {
     setAvatar({
       file: URL.createObjectURL(e.target.files[0])
     })
   }
+
+  const onDrop = useCallback(acceptedFiles => {
+    setAvatar({
+      file: URL.createObjectURL(acceptedFiles[0])
+    })
+  }, [])
+
+  const { getRootProps, getInputProps } = useDropzone({ onDrop })
 
   const [values, setValues] = useState({
     givenName: '',
@@ -42,7 +52,7 @@ const HCardBuilder = () => {
         </div>
         <div className="builder-col order-preview" >
           <p className="heading-preview">HCard Preview</p>
-          <HCardPreview values={values} avatar={avatar} />
+          <HCardPreview values={values} avatar={avatar} getRootProps={getRootProps} getInputProps={getInputProps} />
         </div>
       </div>
     </div>

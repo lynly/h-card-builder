@@ -4,7 +4,7 @@ import FormSubHeading from '../HCardForm/FormSubHeading/FormSubHeading'
 import PreviewAvatar from './PreviewAvatar/PreviewAvatar'
 
 
-const HCardPreview = ({ values, avatar }) => {
+const HCardPreview = ({ values, avatar, getRootProps, getInputProps }) => {
   return (
     <>
       <div className="preview-dark-grey">
@@ -13,7 +13,8 @@ const HCardPreview = ({ values, avatar }) => {
             {/* Added Name: for UX, thought it was confusing showing an empty grey box  */}
             <p className="preview-name">Name: {values.givenName} {values.surname}</p>
           </div>
-          <div className="preview-img">
+          <div className="preview-img" {...getRootProps()}>
+            <input type="file" id='file' name='file' {...getInputProps()} />
             {avatar.file ?
               <img src={avatar.file} />
               : <PreviewAvatar />

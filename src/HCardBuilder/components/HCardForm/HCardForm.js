@@ -16,15 +16,15 @@ const HCardForm = ({ values, handleInputChange, handleAvatarChange }) => {
             <FormTextfield label="Given Name" type="text" id="givenName" name="givenName" value={values.givenName} onChange={handleInputChange} />
           </div>
           <div className="col">
-            <FormTextfield label="Surname" type="text" id="surname" name="surname" value={values.surname} onChange={handleInputChange}/>
+            <FormTextfield label="Surname" type="text" id="surname" name="surname" value={values.surname} onChange={handleInputChange} />
           </div>
         </div>
         <div className="row">
           <div className="col">
-            <FormTextfield label="Email" type="email" id="email" name="email" value={values.email} onChange={handleInputChange}/>
+            <FormTextfield label="Email" type="email" id="email" name="email" value={values.email} onChange={handleInputChange} />
           </div>
           <div className="col">
-            <FormTextfield label="Phone" type="number" id="phone" name="phone" value={values.phone} onChange={handleInputChange}/>
+            <FormTextfield label="Phone" type="number" id="phone" name="phone" value={values.phone} onChange={handleInputChange} />
           </div>
         </div>
       </div>
@@ -32,26 +32,26 @@ const HCardForm = ({ values, handleInputChange, handleAvatarChange }) => {
         <FormSubHeading heading="Address" />
         <div className="row">
           <div className="col">
-            <FormTextfield label="House name or #" type="text" id="house" name="house" value={values.house} onChange={handleInputChange}/>
+            <FormTextfield label="House name or #" type="text" id="house" name="house" value={values.house} onChange={handleInputChange} />
           </div>
           <div className="col">
-            <FormTextfield label="Street" type="text" id="street" name="street" value={values.street} onChange={handleInputChange}/>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col">
-            <FormTextfield label="Suburb" type="text" id="suburb" name="suburb" value={values.suburb} onChange={handleInputChange}/>
-          </div>
-          <div className="col">
-            <FormTextfield label="State" type="text" id="state" name="state" value={values.state} onChange={handleInputChange}/>
+            <FormTextfield label="Street" type="text" id="street" name="street" value={values.street} onChange={handleInputChange} />
           </div>
         </div>
         <div className="row">
           <div className="col">
-            <FormTextfield label="Postcode" type="text" id="postcode" name="postcode" value={values.postcode} onChange={handleInputChange}/>
+            <FormTextfield label="Suburb" type="text" id="suburb" name="suburb" value={values.suburb} onChange={handleInputChange} />
           </div>
           <div className="col">
-            <FormTextfield label="Country" type="text" id="country" name="country" value={values.country} onChange={handleInputChange}/>
+            <FormTextfield label="State" type="text" id="state" name="state" value={values.state} onChange={handleInputChange} />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col">
+            <FormTextfield label="Postcode" type="text" id="postcode" name="postcode" value={values.postcode} onChange={handleInputChange} />
+          </div>
+          <div className="col">
+            <FormTextfield label="Country" type="text" id="country" name="country" value={values.country} onChange={handleInputChange} />
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@ const HCardForm = ({ values, handleInputChange, handleAvatarChange }) => {
         <div className="row">
           <div className="col">
             <input type="file" id='file' name='file' onChange={handleAvatarChange} />
-            <label for="file" className="input-file-button">Upload Avatar</label>
+            <label htmlFor="file" className="input-file-button">Upload Avatar</label>
           </div>
           <div className="col">
             <FormButton type="submit" text="Create hCard" />
